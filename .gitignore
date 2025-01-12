@@ -1,0 +1,17 @@
+# Virtual Environment
+venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Spotify cache
+.spotify_cache
+.cache
