@@ -1,4 +1,4 @@
-# Vibe Detector
+# Vibe Detector (work-in-progress)
 
 A smart room atmosphere detection system that plays appropriate music through Spotify based on the room's vibe. Built using Raspberry Pi 5 and various sensors to detect environmental conditions.
 
