@@ -28,20 +28,7 @@ pip install -r requirements.txt
 
 3. Connect hardware components according to pin configuration in documentation
 
-4. Run the main application:
-```bash
-python src/main.py
-```
-
-## Project Structure
-- src/: Main source code
-  - sensors/: Sensor interface modules
-  - controls/: Physical control interfaces
-  - spotify/: Spotify API integration
-  - analysis/: Vibe detection algorithms
-- config/: Configuration files
-- utils/: Utility functions
-- tests/: Test files
+4. Run publisher python file in Raspberry Pi, run the subscriber file in your local machine (zmq)
 
 ## License
 MIT
