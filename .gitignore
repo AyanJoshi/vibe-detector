@@ -15,3 +15,5 @@ __pycache__/
 # Spotify cache
 .spotify_cache
 .cache
+
+project_status.md
