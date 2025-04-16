@@ -16,7 +16,7 @@ A smart room atmosphere detection system that plays appropriate music through Sp
 To automatically sense the atmosphere (vibe) of a room using environmental sensors and computer vision, and then curate an appropriate musical experience via Spotify. Simultaneously, log all relevant metrics to InfluxDB for real-time monitoring and historical analysis using Grafana.
 
 **2. Data Acquisition (Raspberry Pi - *Implied Setup*):**
-*   A Raspberry Pi (likely running a separate publisher script, not shown in the provided files) collects raw data from connected hardware:
+*   A Raspberry Pi collects raw data from connected hardware:
     *   **DHT22 Sensor:** Measures ambient Temperature and Humidity.
     *   **Webcam (e.g., Logitech C920x):** Captures video frames of the room.
     *   *(Other sensors like MPU-6050/MAX4466 might be involved based on README but aren't directly used in the provided processing code for vibe classification and are yet to be implemented, sorry for the wait).*

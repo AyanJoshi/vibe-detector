@@ -1,17 +1,21 @@
 from influxdb_client import InfluxDBClient, Point
 from influxdb_client.client.write_api import SYNCHRONOUS
 import logging
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 logger = logging.getLogger('vibe_detector')
 
-class MetricsSender:
-    def __init__(self, url="http://localhost:8086", token="jRfHu8tbIv8_rlh8JuYiyiCdjVuo-cWG2iLP1wdoEQQ9b36WXdYaVYV_C92jFG0kPSNgg3EGHDW7F9t8dKgUVw==", 
-                 org="VibeDetector", bucket="vibe_detector"):
+class MetricsSender:    
+    def __init__(self):
         """Initialize InfluxDB client connection"""
-        self.url = url
-        self.token = token
-        self.org = org
-        self.bucket = bucket
+        self.url = os.getenv("INFLUXDB_URL", "http://localhost:8086")
+        self.token = os.getenv("INFLUXDB_API_TOKEN")
+        self.org = os.getenv("INFLUXDB_ORG", "VibeDetector")
+        self.bucket = os.getenv("INFLUXDB_BUCKET", "vibe_detector")
         self.client = None
         self.write_api = None
         
