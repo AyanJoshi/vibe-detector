@@ -41,13 +41,13 @@ class MetricsSender:
                 point = point.field("temperature", float(temperature))
             if humidity is not None:
                 point = point.field("humidity", float(humidity))
-            if brightness:
+            if brightness is not None:
                 point = point.field("brightness", brightness)
-            if color_temp:
+            if color_temp is not None:
                 point = point.field("color_temp", color_temp)
-            if activity:
+            if activity is not None:
                 point = point.field("activity", activity)
-            if vibe:
+            if vibe is not None:
                 point = point.field("vibe", vibe)
             
             # Write the point

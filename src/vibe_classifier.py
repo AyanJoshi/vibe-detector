@@ -5,7 +5,7 @@ class VibeClassifier:
         # Define vibe categories and their characteristics
         self.vibe_categories = {
             "energetic_party": {
-                "brightness": ["bright"],
+                "brightness": ["dim"],
                 "color_temp": ["warm"],
                 "activity": ["group_activity", "group_hanging_out"],
                 "comfort": ["comfortable", "hot"]
